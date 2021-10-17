@@ -1,0 +1,39 @@
+$color-primary: hsl(0, 100%, 74%);
+
+$color-secondary: hsl(154, 59%, 51%);
+
+$color-tertiary: hsl(248, 32%, 49%);
+$color-tertiary--dark: hsl(249, 10%, 26%);
+$color-tertiary--light: hsl(246, 25%, 77%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  // - Weights: 400, 500, 600, 700
+  min-height: 100vh;
+  background-color: $color-primary;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  justify-items: center;
+  @media (min-width: 1140px) {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+}
