@@ -136,7 +136,12 @@ body {
     border-radius: 1rem;
     padding: 2rem 1rem;
     width: 100%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: none; }
+    .content__button:hover {
+      opacity: 0.6;
+      transition: all 0.3s;
+      cursor: pointer; }
   .content__text {
     color: #b9b6d3;
     font-size: 1rem;
@@ -152,5 +157,8 @@ body {
   text-align: center;
   margin: 2rem 0 1rem 0; }
   .attribution__link:link, .attribution__link:visited {
+    color: #6055a5;
     text-transform: uppercase;
     transition: all 0.2s; }
+  .attribution__link:hover, .attribution__link:active {
+    color: #3e3c49; }

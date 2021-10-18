@@ -126,6 +126,12 @@
     padding: 2rem 1rem;
     width: 100%;
     text-transform: uppercase;
+    border: none;
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
   }
 
   &__text {
@@ -149,13 +155,13 @@
 
   &__link:link,
   &__link:visited {
-    // color: $color-primary;
+    color: $color-tertiary;
     text-transform: uppercase;
     transition: all 0.2s;
   }
 
   &__link:hover,
   &__link:active {
-    // color: $color-primary--light;
+    color: $color-tertiary--dark;
   }
 }
