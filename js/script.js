@@ -71,6 +71,7 @@ const setErrorFor = function (input, error, message) {
   input.setAttribute("aria-describedBy", input.id);
   input.setAttribute("aria-invalid", "true");
   input.style.outline = "1px solid hsl(0, 100%, 74%)";
+  input.style.border = "1px solid hsl(0, 100%, 74%)";
   input.style.color = "hsl(0, 100%, 74%)";
   error.classList.remove("content__error-message--hidden");
   error.innerHTML = message;
@@ -81,6 +82,7 @@ const setSuccsessFor = function (input, error) {
   input.removeAttribute("aria-describedBy");
   input.removeAttribute("aria-invalid");
   input.style.outline = "1px solid hsl(154, 59%, 51%)";
+  input.style.border = "1px solid hsl(154, 59%, 51%)";
   input.style.color = "hsl(154, 59%, 51%)";
   error.classList.add("content__error-message--hidden");
   input.classList.add("input__succsess");
