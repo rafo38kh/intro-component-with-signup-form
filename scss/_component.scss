@@ -74,7 +74,6 @@
   }
 
   &__free {
-    // color: $color-tertiary--dark;
     font-weight: 500;
   }
 
@@ -99,23 +98,40 @@
     &-box {
       width: 100%;
       position: relative;
-      @media (min-width: 1140px) {
-      }
+      margin-bottom: 2rem;
     }
 
     &-input {
       padding: 1.8rem;
       border-radius: 0.5rem;
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
       border: 0.1rem solid $color-tertiary--light;
       font-weight: 700;
+      outline: none;
     }
 
     &-error {
       position: absolute;
       right: 7%;
       top: 20%;
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+  &__error-message {
+    width: 60%;
+    margin-left: auto;
+    text-align: right;
+    color: #ff7a7a;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    padding-right: 0.3rem;
+    &--hidden {
+      display: none;
     }
   }
 

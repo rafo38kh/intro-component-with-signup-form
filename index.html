@@ -42,61 +42,85 @@
             </p>
           </div>
 
-          <form action="" class="content__form">
+          <form action="" id="form" class="content__form">
             <div class="content__form-box">
               <input
+                id="firstname"
                 type="text"
                 name="first name"
                 placeholder="Firs Namee"
                 class="content__form-input"
+                aria-label="first name"
               />
               <img
                 src="images/icon-error.svg"
                 alt=""
-                class="content__form-error"
+                aria-hidden="true"
+                class="content__form-error content__form-error--hidden"
               />
+              <p
+                class="content__error-message content__error-message--hidden"
+              ></p>
             </div>
 
             <div class="content__form-box">
               <input
+                id="lastname"
                 type="text"
                 name="Last Name"
                 placeholder="Last Name"
                 class="content__form-input"
+                aria-label="last name"
               />
               <img
                 src="images/icon-error.svg"
                 alt=""
-                class="content__form-error"
+                aria-hidden="true"
+                class="content__form-error content__form-error--hidden"
               />
+              <p
+                class="content__error-message content__error-message--hidden"
+              ></p>
             </div>
 
             <div class="content__form-box">
               <input
-                type="text"
+                id="email"
+                type="email"
                 name="Emal Addres"
                 placeholder="Email Address"
                 class="content__form-input"
+                aria-label="email address"
               />
               <img
                 src="images/icon-error.svg"
                 alt=""
-                class="content__form-error"
+                aria-hidden="true"
+                class="content__form-error content__form-error--hidden"
               />
+              <p
+                class="content__error-message content__error-message--hidden"
+              ></p>
             </div>
 
             <div class="content__form-box">
               <input
+                id="password"
                 type="password"
                 name="Password"
                 placeholder="Password"
                 class="content__form-input"
+                aria-label="password"
               />
               <img
                 src="images/icon-error.svg"
                 alt=""
-                class="content__form-error"
+                aria-hidden="true"
+                class="content__form-error content__form-error--hidden"
               />
+              <p
+                class="content__error-message content__error-message--hidden"
+              ></p>
             </div>
             <button class="content__button">Claim your free trial</button>
             <p class="content__text">
